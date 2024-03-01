@@ -6,8 +6,6 @@ function Landingpage() {
       <div>
         <Heading />
       </div>
-      <p className="text-center">Every Drop of Information</p>
-      <div>Footer</div>
     </div>
   );
 }
