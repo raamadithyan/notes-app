@@ -7,14 +7,14 @@ function Heading() {
 
 	return (
 		<div className="relative ">
-			<div className="drop absolute left-[47%] top-[34%] bg-gray-400 -z-10 "></div>
+			<div className="drop absolute left-[38%] top-[25%] sm:left-[43%] sm:top-[30%]  md:left-[47%] md:top-[34%] bg-gray-400 -z-10 "></div>
 			<header className="  font-semibold text-[6rem] text-center md:text-[10rem]  ">
 				NOTES
 			</header>
 			<section className="w-full py-12 md:py-24 lg:py-32">
 				<div className="container space-y-8 px-4 md:px-6 flex flex-col items-center justify-center  text-center">
-					<div className="space-y-2">
-						<h1 className="text-4xl font-bold tracking-tighter sm:text-6xl">
+					<div className="space-y-2 ">
+						<h1 className="mt-20 md:mt-0 text-4xl font-bold tracking-tighter sm:text-6xl ">
 							Save every drop of notes
 						</h1>
 						<p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
