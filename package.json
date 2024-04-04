@@ -1,12 +1,15 @@
 {
   "name": "notes-app",
-  "version": "0.1.0",
-  "private": true,
+  "module": "index.ts",
+  "type": "commonjs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
@@ -17,7 +20,8 @@
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "@types/bun": "latest"
   },
   "devDependencies": {
     "@types/node": "^20",
