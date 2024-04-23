@@ -1,4 +1,5 @@
 "use client";
+import { ModeToggle } from "@/components/mode-toggle";
 import { useScrollTop } from "@/hooks/useScrollTop";
 import { cn } from "@/lib/utils";
 
@@ -7,11 +8,15 @@ function Navbar() {
 	return (
 		<div
 			className={cn(
-				"z-50  fixed top-0 flex items-center w-full  p-10",
+				"hidden md:z-50  md:fixed md:top-0 md:flex md:items-center md:justify-between md:w-full  md:p-5",
 				scrolled && "border-b shadow-lg bg-white",
 			)}
 		>
-			<div className="drop absolute left-[38%] top-[25%] sm:left-[43%] sm:top-[30%]  md:left-0 md:top-[-10%] md:scale-50 bg-gray-400 -z-10 "></div>
+			<div className="drop hidden absolute left-[38%] top-[25%] sm:left-[43%] sm:top-[30%] md:block  md:left-0 md:top-0 md:scale-[40%] md:-rotate-45 bg-gray-400 -z-10 "></div>
+
+			<div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2">
+				<ModeToggle />
+			</div>
 		</div>
 	);
 }
