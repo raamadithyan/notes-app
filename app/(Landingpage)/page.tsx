@@ -3,7 +3,7 @@ import Navbar from "../_components/Navbar";
 
 function Landingpage() {
   return (
-    <div className="flex flex-col border-2 h-[120vh]">
+    <div className="flex flex-col">
       <div>
         <Navbar />
         <Heading />
