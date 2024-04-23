@@ -7,11 +7,11 @@ function Navbar() {
 	return (
 		<div
 			className={cn(
-				"z-50 bg-white fixed top-0 flex items-center w-full p-6",
-				scrolled && "border-b shadow-sm",
+				"z-50  fixed top-0 flex items-center w-full  p-10",
+				scrolled && "border-b shadow-lg bg-white",
 			)}
 		>
-			Navbar
+			<div className="drop absolute left-[38%] top-[25%] sm:left-[43%] sm:top-[30%]  md:left-0 md:top-[-10%] md:scale-50 bg-gray-400 -z-10 "></div>
 		</div>
 	);
 }
